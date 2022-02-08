@@ -9,7 +9,12 @@
             </p>
             <br>
             <p class="subtitle">
-                <search></search>
+                <form autocomplete="off">
+                    <div >
+                        <input class="input is-large" type="text" placeholder="4 letters to find results..." ng-model="colorName"
+                        auto-complete="$ctrl.autoCompleteOptions">
+                    </div>
+                </form>
             </p>
         </div>
     </div>

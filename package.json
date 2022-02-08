@@ -6,10 +6,11 @@
   "repository": "",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.7.5",
+    "angular": "^1.8.x",
     "angular-auto-complete": "^1.7.4",
-    "angular-loader": "^1.7.5",
-    "angular-route": "^1.7.5",
+    "angular-loader": "^1.8.x",
+    "angular-resource": "^1.8.2",
+    "angular-route": "^1.8.x",
     "angular-sanitize": "^1.8.2",
     "html5-boilerplate": "0.0.1"
   },

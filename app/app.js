@@ -11,6 +11,7 @@ angular.module('myApp', [
   'ngRoute',
   'ngSanitize',
   'autoCompleteModule',
+  'myApp.service',
   'myApp.heroSearch',
   'myApp.version'
 ]).

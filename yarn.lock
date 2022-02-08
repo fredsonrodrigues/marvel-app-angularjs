@@ -56,7 +56,7 @@ angular-auto-complete@^1.7.4:
     angular-sanitize "^1.6.2"
     lodash "^4.17.5"
 
-angular-loader@^1.7.5:
+angular-loader@^1.8.x:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/angular-loader/-/angular-loader-1.8.2.tgz#93825992e4dca96cef94f4f7f633dfe040e8668b"
   integrity sha512-UyaVnPSGwZO4cG7zGYXnqHQ5emTDbl7TKAUA5+CDRS/c3d9pxtpHUlZH+jHvhgJAQyIkky4115L/R6bXJsf+EQ==
@@ -66,7 +66,12 @@ angular-mocks@^1.7.5:
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.8.2.tgz#dc022420b86978cf317a8447c116c0be73a853bf"
   integrity sha512-I5L3P0l21HPdVsP4A4qWmENt4ePjjbkDFdAzOaM7QiibFySbt14DptPbt2IjeG4vFBr4vSLbhIz8Fk03DISl8Q==
 
-angular-route@^1.7.5:
+angular-resource@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.8.2.tgz#fc1f1adb93dfb83e295d1cfff2a48cec4296e20a"
+  integrity sha512-CbTu8ypkVZMBLm+Wd+jI9xR7QEVCeUgN8WXsr9Yi9l0s/8ZQa5kEIuYX3F/75Ej8Xs1Jp9DoKjAyvACI6Q8IJA==
+
+angular-route@^1.8.x:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/angular-route/-/angular-route-1.8.2.tgz#d482bf05a8c9e448300acd8f9989c635d31b5077"
   integrity sha512-49LJYxuaQ/ZDiu9dD2xo1LkazqObkGjw0a7dUF7UKCT8EELgBsMd6QrI6aEVGtI62ppkiFkxqmiV8fcwYdXpug==
@@ -76,7 +81,7 @@ angular-sanitize@^1.6.2, angular-sanitize@^1.8.2:
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.8.2.tgz#ae78040f00c5e2ce1c63780bcc47fa14a1698296"
   integrity sha512-OB6Goa+QN3byf5asQ7XRl7DKZejm/F/ZOqa9z1skqYVOWA2hoBxoCmt9E7+i7T/TbxZP5zYzKxNZVVJNu860Hg==
 
-angular@^1.5.3, angular@^1.7.5:
+angular@^1.5.3, angular@^1.8.x:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.8.2.tgz#5983bbb5a9fa63e213cb7749199e0d352de3a2f1"
   integrity sha512-IauMOej2xEe7/7Ennahkbb5qd/HFADiNuLSESz9Q27inmi32zB0lnAsFeLEWcox3Gd1F6YhNd1CP7/9IukJ0Gw==
