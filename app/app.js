@@ -17,6 +17,10 @@ angular.module('myApp', [
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.html5Mode(true);
-
+  
+  $routeProvider.when('/', {
+    template: '<hero-search></hero-search>'
+  });
+  
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.heroSearch').
+angular.module('myApp.heroSearch', ['ngRoute']).
   component('heroSearch', {
     templateUrl: '/hero-search/hero-search.template.html',
     controller: ['Heroes', function heroSearchController(Heroes) {
