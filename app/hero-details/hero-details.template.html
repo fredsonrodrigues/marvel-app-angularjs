@@ -1,0 +1,45 @@
+<section class="hero is-fullheight">
+    <div class="hero-head">
+        <marvel-header></marvel-header>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title">
+                <img
+                    src="{{$ctrl.herodata.thumbnail.path + '/standard_fantastic.' + $ctrl.herodata.thumbnail.extension}}" />
+            </p>
+            <p class="title">
+                {{ $ctrl.herodata.name }}
+            </p>
+            <br>
+            <p class="subtitle">
+                {{ $ctrl.herodata.description }}
+            </p>
+            <p class="subtitle">
+            <div class="columns">
+                <div class="column ">
+                    <div class="box">
+                        <h1>{{ $ctrl.herodata.comics.available }}</h1>
+                        <p>Comics</p>
+                        <a href="{{ $ctrl.herodata.urls[0].url }}" class="button is-danger is-medium is-responsive"">See More</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h1>{{ $ctrl.herodata.stories.available }}</h1>
+                        <p>Stories</p>
+                        <a href="{{ $ctrl.herodata.urls[0].url }}" class="button is-danger is-medium is-responsive"">See More</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <h1>{{ $ctrl.herodata.series.available }}</h1>
+                        <p>Series</p>
+                        <a href="{{ $ctrl.herodata.urls[0].url }}" class="button is-danger is-medium is-responsive"">See More</a>
+                    </div>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+</section>

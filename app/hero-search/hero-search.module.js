@@ -12,11 +12,8 @@ angular.module('myApp.heroSearch', ['ngRoute']).
           return {
               id: item.id,
               value: item.name,
-              label: "<p class='auto-complete' ng-bind-html='item.name'></p>"
+              label: "<a href='#!/search/"+item.id+"' class='auto-complete' ng-bind-html='item.name'></a>"
           };
-        },
-        itemSelected: function ({ item }) {
-          console.log(item)
         },
         data: function (searchText) {
           var heroes = Heroes.get({ search: searchText });

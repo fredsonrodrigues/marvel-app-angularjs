@@ -13,14 +13,15 @@ angular.module('myApp', [
   'autoCompleteModule',
   'myApp.service',
   'myApp.heroSearch',
+  'myApp.heroDetails',
   'myApp.version'
 ]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.html5Mode(true);
-  
+config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {  
   $routeProvider.when('/', {
     template: '<hero-search></hero-search>'
-  });
-  
-  $routeProvider.otherwise({redirectTo: '/'});
+  }).
+  when('/search/:heroId', {
+    template: '<hero-details></hero-details>'
+  }).
+  otherwise({redirectTo: '/'});
 }]);
