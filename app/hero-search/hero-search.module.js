@@ -6,19 +6,22 @@ angular.module('myApp.heroSearch', ['ngRoute']).
     controller: ['Heroes', function heroSearchController(Heroes) {
       var ctrl = this;
       ctrl.selected = ''
-      ctrl.names = ["john", "bill", "charlie", "robert", "alban", "oscar", "marie", "celine", "brad", "drew", "rebecca", "michel", "francis", "jean", "paul", "pierre", "nicolas", "alfred", "gerard", "louis", "albert", "edouard", "benoit", "guillaume", "nicolas", "joseph"];
-
       ctrl.autoCompleteOptions = {
-        minimumChars: 2,
-        itemSelected: function (item) {
+        minimumChars: 4,
+        renderItem: function (item) {
+          return {
+              id: item.id,
+              value: item.name,
+              label: "<p class='auto-complete' ng-bind-html='item.name'></p>"
+          };
+        },
+        itemSelected: function ({ item }) {
           console.log(item)
         },
         data: function (searchText) {
-          var heroes = Heroes.query();
+          var heroes = Heroes.get({ search: searchText });
           return heroes.$promise.then(function (result) {
-            return result.filter((todos) => {
-              return todos.title.startsWith(searchText);
-            }).map(e => e.title);
+            return result.data?.results;
           });
         }
       }
